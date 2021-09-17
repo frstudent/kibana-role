@@ -1,8 +1,4 @@
 ---
-  - name: Install Kibana
-    hosts: frc1
-    debugger: on_failed
-    tasks:
       - name: Check if Kibana already downloaded
         stat:
           path: "/tmp/kibana-{{ kibana_version }}-linux-x86_64.tar.gz"
