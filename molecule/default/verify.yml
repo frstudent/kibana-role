@@ -7,5 +7,5 @@
   tasks:
   - name: Check Kibana version
     shell:
-      cmd: {{ kibana_home }}/bin/kibana --version
+      cmd: {{ kibana_home }}/bin/kibana --version --allow-root
     changed_when: false
